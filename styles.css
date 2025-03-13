@@ -12,8 +12,30 @@ div {
 
 }
 
+.splash {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 100%;
+    z-index: 0;
+}
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+        z-index: -1;
+    }
+}
+
+
 header {
-    max-height: 10%;
+    max-height: 8%;
     background-color: aliceblue;
     flex: 1;
 }
@@ -64,7 +86,7 @@ ul {
 }
 
 footer {
-    max-height: 8%;
+    max-height: 6%;
     background-color: aliceblue;
     bottom: 0px;
     width: 100%;
