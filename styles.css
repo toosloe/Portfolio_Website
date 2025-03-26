@@ -25,18 +25,23 @@ div {
     z-index: 0;
 }
 
+/*
 .door2 {
     height: 700px;
     width: 400px;
     margin-left: 30vw;
 }
+    */
 
 .door1 {
     height: 700px;
     width: 400px;
-    
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
+/*
 .door1:hover {
     cursor: pointer;
     opacity: 0%;
@@ -48,6 +53,7 @@ div {
     opacity: 100%;
     z-index: 10;
 }
+    */
 
 @keyframes fadeOut {
     0% {
