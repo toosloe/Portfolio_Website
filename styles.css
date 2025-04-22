@@ -6,7 +6,8 @@ html, body, .splash {
 }
 
 body {
-    background-color: #4297A0;
+    /*background-image: repeating-linear-gradient(rgb(255, 255, 255), rgb(247, 245, 243) 0.01%);*/
+    background-color: white;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -69,10 +70,13 @@ div {
 
 header {
     max-height: 10%;
-    background-color: #2f5061;
-    border-radius: 15px;
-    border: 5px solid rgb(248, 243, 248);
+    background-color: rgb(253, 246, 233);
+    border: 15px solid transparent;
+    border-image: url("./images/pokemonMenu2.png") 10 round;
     flex: 1;
+    margin: 10px;
+    border-image-outset: 7px;
+    box-shadow: 7px 15px;
 }
 
 .body {
@@ -93,13 +97,13 @@ ul {
 
 @keyframes fadeIn {
     0% {
-        transfrom: translate (0px, 20px);
-        opacity: 50%;
+        transform: translate (0px, 20px);
+    
     }
 
     100% {
-        transfrom: translate (0px, 0px);
-        opacity: 100%;
+        transform: translate (0px, 0px);
+        filter: drop-shadow(16px 16px 0px black);
         height: 450px;
         width: 450px;
     }
@@ -109,8 +113,8 @@ ul {
 .card {
     height: 300px;
     width: 300px;
-    background-color: aliceblue;
-    border: 1px solid rgb(250, 252, 253);
+    border: 15px solid transparent;
+    border-image: url("./images/pokemonMenu2.png") 10 round;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -126,12 +130,15 @@ ul {
     animation-name: fadeIn;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+    
+
 }
 
 footer {
-    max-height: 4%;
-    background-color: rgb(207, 203, 207);
-    border-radius: 15px;
-    border: 5px solid rgb(248, 243, 248);
+    max-height: 2%;
+    background-color: rgb(253, 246, 233);
+    border: 15px solid transparent;
+    border-image: url("./images/pokemonMenu2.png") 10 round;
+    border-image-outset: 7px;
     flex: 1;
 }
